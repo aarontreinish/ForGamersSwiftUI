@@ -3,23 +3,93 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21A97546266FCCAD00E7640E /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A97545266FCCAD00E7640E /* NewPostView.swift */; };
+		21A9754926700BE400E7640E /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9754826700BE400E7640E /* SearchBar.swift */; };
+		21A97583267117BC00E7640E /* UpVotedPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A97582267117BC00E7640E /* UpVotedPostsViewModel.swift */; };
+		21A97586267117CB00E7640E /* DownVotedPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A97585267117CB00E7640E /* DownVotedPostsViewModel.swift */; };
 		21B91F362667985C0045DE87 /* ForGamersSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B91F352667985C0045DE87 /* ForGamersSwiftUIApp.swift */; };
 		21B91F382667985C0045DE87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B91F372667985C0045DE87 /* ContentView.swift */; };
 		21B91F3A2667985E0045DE87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B91F392667985E0045DE87 /* Assets.xcassets */; };
 		21B91F3D2667985E0045DE87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B91F3C2667985E0045DE87 /* Preview Assets.xcassets */; };
+		21B91F47266799F60045DE87 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B91F46266799F60045DE87 /* FirestoreManager.swift */; };
+		21B91F6426679B160045DE87 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B91F6326679B160045DE87 /* DatabaseManager.swift */; };
+		21B91F6726679C350045DE87 /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B91F6626679C350045DE87 /* Community.swift */; };
+		21B91FBB2667ACB40045DE87 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B91FBA2667ACB40045DE87 /* StorageManager.swift */; };
+		21B91FBE2667ADA00045DE87 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B91FBD2667ADA00045DE87 /* AuthManager.swift */; };
+		21B91FC12667B1710045DE87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B91FC02667B1710045DE87 /* AppDelegate.swift */; };
+		21B91FC42667B2010045DE87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21B91FC32667B2010045DE87 /* GoogleService-Info.plist */; };
+		21DE9EE42667B3B600FC3850 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9EE32667B3B600FC3850 /* SignUpView.swift */; };
+		21DE9EE72667B40B00FC3850 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9EE62667B40B00FC3850 /* TabBarView.swift */; };
+		21DE9EEA2667B48C00FC3850 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9EE92667B48C00FC3850 /* HomeView.swift */; };
+		21DE9EF02667B4CB00FC3850 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9EEF2667B4CB00FC3850 /* PostsViewModel.swift */; };
+		21DE9EF42667B9F500FC3850 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9EF32667B9F500FC3850 /* DiscoverView.swift */; };
+		21DE9EF82667BA2800FC3850 /* CommunitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9EF72667BA2800FC3850 /* CommunitiesViewModel.swift */; };
+		21DE9F1E2667BF0000FC3850 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9F1D2667BF0000FC3850 /* AsyncImage.swift */; };
+		21DE9F222667C1ED00FC3850 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9F212667C1ED00FC3850 /* PostView.swift */; };
+		21DE9F252667CADE00FC3850 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9F242667CADE00FC3850 /* KeyboardResponder.swift */; };
+		21DE9F282667D14200FC3850 /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9F272667D14200FC3850 /* CommentsViewModel.swift */; };
+		21DE9F2B2667DE3C00FC3850 /* GrowingTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9F2A2667DE3C00FC3850 /* GrowingTextInputView.swift */; };
+		21DE9F2E2667DE6E00FC3850 /* TextViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9F2D2667DE6E00FC3850 /* TextViewWrapper.swift */; };
+		21DE9F362668FA5500FC3850 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9F352668FA5500FC3850 /* CommunityView.swift */; };
+		21DE9F392669037400FC3850 /* CommunityNewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9F382669037400FC3850 /* CommunityNewPostView.swift */; };
+		21DE9F3C26690CB700FC3850 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9F3B26690CB700FC3850 /* TextView.swift */; };
+		21DE9F3F2669105700FC3850 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9F3E2669105700FC3850 /* ImagePicker.swift */; };
+		21DE9F422669228000FC3850 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9F412669228000FC3850 /* PostViewModel.swift */; };
+		21DE9F61266B9C0300FC3850 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9F60266B9C0300FC3850 /* AccountView.swift */; };
+		21DE9F64266CF33200FC3850 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9F63266CF33200FC3850 /* OnboardingView.swift */; };
+		21DE9FB0266E656500FC3850 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9FAF266E656500FC3850 /* SpinnerView.swift */; };
+		21DE9FB6266EB21E00FC3850 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9FB5266EB21D00FC3850 /* CreateView.swift */; };
+		21DE9FBA266FB3FC00FC3850 /* HomeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE9FB9266FB3FC00FC3850 /* HomeCellView.swift */; };
+		70615F10B5C026BFF53E0F14 /* Pods_ForGamersSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BE910937033953A0C2EF70 /* Pods_ForGamersSwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02AD9626E31D5879D8A89E3D /* Pods-ForGamersSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForGamersSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-ForGamersSwiftUI/Pods-ForGamersSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		20EF59CE88F37D1D91DDDFA0 /* Pods-ForGamersSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForGamersSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-ForGamersSwiftUI/Pods-ForGamersSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		21A97545266FCCAD00E7640E /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
+		21A9754826700BE400E7640E /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		21A97582267117BC00E7640E /* UpVotedPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpVotedPostsViewModel.swift; sourceTree = "<group>"; };
+		21A97585267117CB00E7640E /* DownVotedPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownVotedPostsViewModel.swift; sourceTree = "<group>"; };
 		21B91F322667985C0045DE87 /* ForGamersSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForGamersSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B91F352667985C0045DE87 /* ForGamersSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForGamersSwiftUIApp.swift; sourceTree = "<group>"; };
 		21B91F372667985C0045DE87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		21B91F392667985E0045DE87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21B91F3C2667985E0045DE87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		21B91F3E2667985E0045DE87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B91F46266799F60045DE87 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
+		21B91F6326679B160045DE87 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		21B91F6626679C350045DE87 /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
+		21B91FBA2667ACB40045DE87 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		21B91FBD2667ADA00045DE87 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		21B91FC02667B1710045DE87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21B91FC32667B2010045DE87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		21DE9EE32667B3B600FC3850 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		21DE9EE62667B40B00FC3850 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		21DE9EE92667B48C00FC3850 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		21DE9EEF2667B4CB00FC3850 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		21DE9EF32667B9F500FC3850 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		21DE9EF72667BA2800FC3850 /* CommunitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesViewModel.swift; sourceTree = "<group>"; };
+		21DE9F1D2667BF0000FC3850 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		21DE9F212667C1ED00FC3850 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		21DE9F242667CADE00FC3850 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		21DE9F272667D14200FC3850 /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
+		21DE9F2A2667DE3C00FC3850 /* GrowingTextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingTextInputView.swift; sourceTree = "<group>"; };
+		21DE9F2D2667DE6E00FC3850 /* TextViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewWrapper.swift; sourceTree = "<group>"; };
+		21DE9F352668FA5500FC3850 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		21DE9F382669037400FC3850 /* CommunityNewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityNewPostView.swift; sourceTree = "<group>"; };
+		21DE9F3B26690CB700FC3850 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		21DE9F3E2669105700FC3850 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		21DE9F412669228000FC3850 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		21DE9F60266B9C0300FC3850 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		21DE9F63266CF33200FC3850 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		21DE9FAF266E656500FC3850 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		21DE9FB5266EB21D00FC3850 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		21DE9FB9266FB3FC00FC3850 /* HomeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellView.swift; sourceTree = "<group>"; };
+		C4BE910937033953A0C2EF70 /* Pods_ForGamersSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForGamersSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +97,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70615F10B5C026BFF53E0F14 /* Pods_ForGamersSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A45A6BEBA435B070E0559F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02AD9626E31D5879D8A89E3D /* Pods-ForGamersSwiftUI.debug.xcconfig */,
+				20EF59CE88F37D1D91DDDFA0 /* Pods-ForGamersSwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		21B91F292667985C0045DE87 = {
 			isa = PBXGroup;
 			children = (
 				21B91F342667985C0045DE87 /* ForGamersSwiftUI */,
 				21B91F332667985C0045DE87 /* Products */,
+				0A45A6BEBA435B070E0559F2 /* Pods */,
+				BB3A921A177095769E8C6185 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,10 +134,15 @@
 		21B91F342667985C0045DE87 /* ForGamersSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				21DE9F1C2667BE9E00FC3850 /* Managers */,
+				21DE9F1B2667BE9600FC3850 /* Model */,
+				21DE9F1A2667BE7F00FC3850 /* Views */,
+				21DE9F192667BE6800FC3850 /* ViewModels */,
+				21B91FC02667B1710045DE87 /* AppDelegate.swift */,
 				21B91F352667985C0045DE87 /* ForGamersSwiftUIApp.swift */,
-				21B91F372667985C0045DE87 /* ContentView.swift */,
 				21B91F392667985E0045DE87 /* Assets.xcassets */,
 				21B91F3E2667985E0045DE87 /* Info.plist */,
+				21B91FC32667B2010045DE87 /* GoogleService-Info.plist */,
 				21B91F3B2667985E0045DE87 /* Preview Content */,
 			);
 			path = ForGamersSwiftUI;
@@ -69,6 +156,74 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		21DE9F192667BE6800FC3850 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				21DE9F412669228000FC3850 /* PostViewModel.swift */,
+				21DE9EEF2667B4CB00FC3850 /* PostsViewModel.swift */,
+				21DE9EF72667BA2800FC3850 /* CommunitiesViewModel.swift */,
+				21DE9F272667D14200FC3850 /* CommentsViewModel.swift */,
+				21A97582267117BC00E7640E /* UpVotedPostsViewModel.swift */,
+				21A97585267117CB00E7640E /* DownVotedPostsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		21DE9F1A2667BE7F00FC3850 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				21B91F372667985C0045DE87 /* ContentView.swift */,
+				21DE9EE32667B3B600FC3850 /* SignUpView.swift */,
+				21DE9F63266CF33200FC3850 /* OnboardingView.swift */,
+				21DE9EE62667B40B00FC3850 /* TabBarView.swift */,
+				21DE9EE92667B48C00FC3850 /* HomeView.swift */,
+				21DE9FB9266FB3FC00FC3850 /* HomeCellView.swift */,
+				21DE9EF32667B9F500FC3850 /* DiscoverView.swift */,
+				21DE9FB5266EB21D00FC3850 /* CreateView.swift */,
+				21DE9F212667C1ED00FC3850 /* PostView.swift */,
+				21DE9F2A2667DE3C00FC3850 /* GrowingTextInputView.swift */,
+				21DE9F2D2667DE6E00FC3850 /* TextViewWrapper.swift */,
+				21DE9F352668FA5500FC3850 /* CommunityView.swift */,
+				21DE9F382669037400FC3850 /* CommunityNewPostView.swift */,
+				21DE9F3B26690CB700FC3850 /* TextView.swift */,
+				21DE9F3E2669105700FC3850 /* ImagePicker.swift */,
+				21DE9F60266B9C0300FC3850 /* AccountView.swift */,
+				21DE9FAF266E656500FC3850 /* SpinnerView.swift */,
+				21A97545266FCCAD00E7640E /* NewPostView.swift */,
+				21A9754826700BE400E7640E /* SearchBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		21DE9F1B2667BE9600FC3850 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21B91F6626679C350045DE87 /* Community.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		21DE9F1C2667BE9E00FC3850 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				21B91F46266799F60045DE87 /* FirestoreManager.swift */,
+				21B91F6326679B160045DE87 /* DatabaseManager.swift */,
+				21B91FBA2667ACB40045DE87 /* StorageManager.swift */,
+				21B91FBD2667ADA00045DE87 /* AuthManager.swift */,
+				21DE9F1D2667BF0000FC3850 /* AsyncImage.swift */,
+				21DE9F242667CADE00FC3850 /* KeyboardResponder.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		BB3A921A177095769E8C6185 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4BE910937033953A0C2EF70 /* Pods_ForGamersSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21B91F412667985E0045DE87 /* Build configuration list for PBXNativeTarget "ForGamersSwiftUI" */;
 			buildPhases = (
+				F33710A972D1EF97AED0B6B3 /* [CP] Check Pods Manifest.lock */,
 				21B91F2E2667985C0045DE87 /* Sources */,
 				21B91F2F2667985C0045DE87 /* Frameworks */,
 				21B91F302667985C0045DE87 /* Resources */,
+				F98DF9F9869A65E8DDD8B119 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B91FC42667B2010045DE87 /* GoogleService-Info.plist in Resources */,
 				21B91F3D2667985E0045DE87 /* Preview Assets.xcassets in Resources */,
 				21B91F3A2667985E0045DE87 /* Assets.xcassets in Resources */,
 			);
@@ -133,12 +291,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F33710A972D1EF97AED0B6B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForGamersSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F98DF9F9869A65E8DDD8B119 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForGamersSwiftUI/Pods-ForGamersSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForGamersSwiftUI/Pods-ForGamersSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForGamersSwiftUI/Pods-ForGamersSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		21B91F2E2667985C0045DE87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21DE9F422669228000FC3850 /* PostViewModel.swift in Sources */,
+				21DE9F282667D14200FC3850 /* CommentsViewModel.swift in Sources */,
+				21DE9F2B2667DE3C00FC3850 /* GrowingTextInputView.swift in Sources */,
+				21DE9EF42667B9F500FC3850 /* DiscoverView.swift in Sources */,
+				21DE9F252667CADE00FC3850 /* KeyboardResponder.swift in Sources */,
+				21A97586267117CB00E7640E /* DownVotedPostsViewModel.swift in Sources */,
+				21B91FC12667B1710045DE87 /* AppDelegate.swift in Sources */,
+				21DE9F392669037400FC3850 /* CommunityNewPostView.swift in Sources */,
+				21DE9F2E2667DE6E00FC3850 /* TextViewWrapper.swift in Sources */,
+				21B91F6726679C350045DE87 /* Community.swift in Sources */,
+				21DE9FBA266FB3FC00FC3850 /* HomeCellView.swift in Sources */,
+				21B91FBE2667ADA00045DE87 /* AuthManager.swift in Sources */,
+				21B91F6426679B160045DE87 /* DatabaseManager.swift in Sources */,
 				21B91F382667985C0045DE87 /* ContentView.swift in Sources */,
+				21DE9F64266CF33200FC3850 /* OnboardingView.swift in Sources */,
+				21DE9EEA2667B48C00FC3850 /* HomeView.swift in Sources */,
+				21B91FBB2667ACB40045DE87 /* StorageManager.swift in Sources */,
+				21DE9FB6266EB21E00FC3850 /* CreateView.swift in Sources */,
+				21DE9EF82667BA2800FC3850 /* CommunitiesViewModel.swift in Sources */,
+				21B91F47266799F60045DE87 /* FirestoreManager.swift in Sources */,
+				21DE9F362668FA5500FC3850 /* CommunityView.swift in Sources */,
+				21DE9F222667C1ED00FC3850 /* PostView.swift in Sources */,
+				21A9754926700BE400E7640E /* SearchBar.swift in Sources */,
+				21DE9F1E2667BF0000FC3850 /* AsyncImage.swift in Sources */,
+				21DE9EF02667B4CB00FC3850 /* PostsViewModel.swift in Sources */,
+				21A97583267117BC00E7640E /* UpVotedPostsViewModel.swift in Sources */,
+				21DE9EE42667B3B600FC3850 /* SignUpView.swift in Sources */,
+				21DE9F3C26690CB700FC3850 /* TextView.swift in Sources */,
+				21DE9F3F2669105700FC3850 /* ImagePicker.swift in Sources */,
+				21DE9EE72667B40B00FC3850 /* TabBarView.swift in Sources */,
+				21DE9F61266B9C0300FC3850 /* AccountView.swift in Sources */,
+				21DE9FB0266E656500FC3850 /* SpinnerView.swift in Sources */,
+				21A97546266FCCAD00E7640E /* NewPostView.swift in Sources */,
 				21B91F362667985C0045DE87 /* ForGamersSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +496,7 @@
 		};
 		21B91F422667985E0045DE87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02AD9626E31D5879D8A89E3D /* Pods-ForGamersSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -277,7 +510,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aarontreinish.ForGamersSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aarontreinish.ForGamers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -286,6 +519,7 @@
 		};
 		21B91F432667985E0045DE87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20EF59CE88F37D1D91DDDFA0 /* Pods-ForGamersSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,7 +533,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aarontreinish.ForGamersSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aarontreinish.ForGamers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
